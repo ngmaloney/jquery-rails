@@ -126,7 +126,7 @@
         }
 
         options = {
-          type: method || 'GET', data: data, dataType: dataType,
+          type: method || 'GET', data: data, dataType: dataType, cache: false,
           // stopping the "ajax:beforeSend" event will cancel the ajax request
           beforeSend: function(xhr, settings) {
             if (settings.dataType === undefined) {
